@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .formBio {
+                margin-bottom: 5px;
+            }
+            .formBio label {
+                display: inline-block;
+                width: 185px;
+                vertical-align: top;
+            }
+            .formAkun {
+                margin-bottom: 5px;
+            }
+            .formAkun label{
+                display: inline-block;
+                width: 120px;
+            }
+            .formKemampuan {
+                margin: 5px;
+            }
+            .fieldsize {
+                width: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Form Registrasi</h1>
+
+        <form action="" method="get">
+            <fieldset class="fieldsize">
+                <legend>Biodata</legend>
+                <div class="formBio">
+                    <label>Nama Mahasiswa</label> :
+                    <input type="text" name="text_form" size="20" placeholder="Nama Anda">
+                </div>
+                <div class="formBio">
+                    <label>No Induk Mahasiswa (NIM)</label> :
+                    <input type="text" name="text_form" size="20" value="0123456789">
+                </div>
+                <div class="formBio">
+                    <label>Alamat Mahasiswa</label> <span style="vertical-align: top;">:</span>
+                    <textarea name="textarea_form" cols="30" rows="5" placeholder="Alamat Anda"></textarea>
+                </div>
+                <div class="formBio">
+                    <label>Tanggal Lahir</label> :
+                    <select name="tanggal">
+                        <option value=1>01</option>
+                        <option value=2>02</option>
+                    </select>
+                    <select name="bulan">
+                        <option value=1>Januari</option>
+                        <option value=2>Februari</option>
+                    </select>
+                    <select name="tahun">
+                        <option value=1>1990</option>
+                        <option value=2>1991</option>
+                    </select>
+                </div>
+                <div class="formBio">
+                    <label>Jenis Kelamin</label> :
+                    <input type="radio" name="radio" value="Pria" id="Pria" checked>Pria
+                    <input type="radio" name="radio" value="Wanita" id="Wanita">Wanita
+                </div>
+                <div class="formBio">
+                    <label>Upload Foto</label> :
+                    <input type="file" name="file">
+                </div>
+                <div class="formBio">
+                    <label>URL Website</label> :
+                    <input type="text" name="text_form" size="35" placeholder="URL Website Anda">
+                </div>
+                <div class="formBio">
+                    <label>Perguruan Tinggi</label> :
+                    <input type="text" name="text_form" size="20">
+                </div>
+            </fieldset>
+
+            <p> </p>
+
+            <fieldset class="fieldsize">
+                <legend>Info Akun</legend>
+                <div class="formAkun">
+                    <label>Email</label> :
+                    <input type="email" name="email_form" size="20" placeholder="Email Anda">
+                </div>
+                <div class="formAkun">
+                    <label>Username</label> :
+                    <input type="text" name="text_form" size="20" placeholder="Username Anda">
+                </div>
+                <div class="formAkun">
+                    <label>Password</label> :
+                    <input type="password" name="password_form" size="20" placeholder="Password Anda">
+                </div>
+                <div class="formAkun">
+                    <label>Ulangi Password</label> :
+                    <input type="password" name="password_form" size="20" placeholder="Password Anda">
+                </div>
+            </fieldset>
+
+            <p> </p>
+
+            <fieldset class="fieldsize">
+                <legend>Kemampuan Dasar</legend>
+                <div class="formKemampuan">
+                <input type="checkbox" name="HTML" value="HTML" id="HTML"><label for="HTML">HTML</label>
+                <input type="checkbox" name="CSS" value="CSS" id="CSS"><label for="CSS">CSS</label>
+                <input type="checkbox" name="Javascript" value="Javascript" id="Javascript"><label for="Javascript">Javascript</label>
+                <input type="checkbox" name="PHP" value="PHP" id="PHP"><label for="PHP">PHP</label>
+                <input type="checkbox" name="MySQL" value="MySQL" id="MySQL"><label for="MySQL">MySQL</label>
+                <input type="checkbox" name="Laravel" value="Laravel" id="Laravel"><label for="Laravel">Laravel</label>
+                <input type="checkbox" name="React" value="React" id="React"><label for="React">React Native</label>
+                </div>
+            </fieldset>
+
+            <p>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Simpan">
+                <input type="button" value="Button" onclick="">
+            </p>
+
+        </form>
+    </body>
+</html>
